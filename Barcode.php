@@ -20,7 +20,7 @@ class Barcode
       $this->_encoder = new EAN13($this->number, $this->scale);
    }
 
-   function __destruct()
+   function display()
    {
       $this->_encoder->display();
    }
